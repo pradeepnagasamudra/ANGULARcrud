@@ -1,0 +1,19 @@
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+    <mat-card fxFlex ="25">
+        <mat-toolbar color="primary">login page</mat-toolbar>
+        <form  fxLayoutAlign="stretch" fxLayout="column" [formGroup]="formGroup" class="login-form" (ngSubmit)="loginprocess()">
+          
+            <mat-form-field>
+                <input matInput placeholder="email" formControlName="email">
+               </mat-form-field>
+
+             <mat-form-field>
+            <input matInput type="password" formControlName="password" placeholder="Password">
+            </mat-form-field>
+           <button mat-raised-button type ="submit" > login</button>
+        </form>
+        <h4 class="login"> if your existing user click below <br>
+            <a routerLink="/signup">signup</a>
+            </h4>
+    </mat-card>
+</div>

@@ -1,0 +1,19 @@
+.about-router{
+    text-align: center;
+}
+
+.mytext{
+    margin:0 auto;
+}
+#topnav-right{
+    background-color:white ;
+    color:black;
+}
+.toolbar{
+background: #3f51b5;
+color: #fff;
+position: sticky;
+top: 0;
+z-index: 2;
+    
+    }

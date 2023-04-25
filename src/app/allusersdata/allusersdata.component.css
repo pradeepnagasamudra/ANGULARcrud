@@ -1,0 +1,75 @@
+/* .mytext{
+    margin:0 auto;
+}
+.main-div{
+    margin-top: 12%;
+}
+
+.side{
+    width:200px;
+    background-color: #3f51b5;
+    height:500px
+}
+::ng-deep .mat-drawer-content {
+    
+    height: 200px !important;}
+
+    #main-container{
+        height: 550px !important;
+    }
+
+
+    .heading{
+        text-align: center;
+    } */
+
+    .main-div mat-card{
+        padding:0px;
+        /* margin-top: 5%; */
+        }
+        .login-form{
+           padding :20px;
+        }
+        .login{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    
+        .gender{
+     border: 1px solid rgba(0, 0, 0, 0.377);
+    border-radius: 4px;
+    margin-bottom: 7%;
+    height: 3rem;
+    display: flex;
+    justify-content: left;
+    padding-top: 3%;
+    }
+    .main-div{
+        margin-top: 12%;
+    }
+    
+    .side{
+        width:200px;
+        background-color: #3f51b5;
+    }
+    mat-drawer-container{
+        height: 120%;
+    }
+    
+    .matcard{
+        text-align: center;
+       
+    
+    }
+    
+    .allinputs{
+        width:70%;
+    }
+    .form-group{
+        width: 100%;
+    }
+    
+    .form-row{
+        padding-top:20px;
+    
+    }

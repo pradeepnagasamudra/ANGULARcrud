@@ -1,0 +1,91 @@
+
+<mat-drawer-container>
+  <mat-drawer class="side" mode="side" opened="true">
+ <app-sidebar></app-sidebar>
+</mat-drawer>
+ 
+<!-- <div *ngIf="user">
+    {{user.}}
+</div> -->
+<!-- <div *ngIf="user">
+  <h1>{{ user.firstName }} {{ user.lastName }}</h1>
+  <p>Email: {{ user.email }}</p>
+  <p>DOB: {{ user.DOB }}</p>
+  <p>Gender: {{ user.gender }}</p>
+  <p>Contact Number: {{ user.contactNumber }}</p>
+</div>  -->
+
+
+    <!-- <button (click)="opened =!opened">toggle opened</button> -->
+
+
+
+    <div class="form-rowmain" fxLayoutAlign="center center" fxFlexFill>
+      <mat-card fxFlex="30" class="matcard">
+        <div *ngIf="user">
+          <form (ngSubmit)="onSubmit()" fxLayoutAlign="stretch" fxLayout="column">
+            <mat-toolbar  color="primary">user profile</mat-toolbar>
+            <mat-card-content>
+          
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <mat-form-field class="allinputs input-control" appearance="outline">
+                    <mat-label>First Name</mat-label>
+                    <input matInput [(ngModel)]="user.firstName" name="firstName" required>
+                  </mat-form-field>
+                </div>
+          
+                <div class="form-group col-md-6">
+                  <mat-form-field  class="allinputs input-control"  appearance="outline">
+                    <mat-label>Last Name</mat-label>
+                    <input matInput [(ngModel)]="user.lastName" name="lastName" required>
+                  </mat-form-field>
+                </div>
+              </div>
+          
+              <div class="form-group">
+                <mat-form-field  class="allinputs input-control"  appearance="outline">
+                  <mat-label>Email</mat-label>
+                  <input matInput [(ngModel)]="user.email" name="email" required readonly>
+                </mat-form-field>
+              </div>
+          
+              <div class="form-group">
+                <mat-form-field  class="allinputs input-control"  appearance="outline">
+                  <mat-label>DOB</mat-label>
+                  <input matInput [(ngModel)]="user.DOB" name="dob" [matDatepicker]="dobPicker" required>
+                  <mat-datepicker-toggle matSuffix [for]="dobPicker"></mat-datepicker-toggle>
+                  <mat-datepicker #dobPicker></mat-datepicker>
+                </mat-form-field>
+              </div>
+          
+              <div class="form-group">
+                <mat-form-field  class="allinputs input-control"  appearance="outline">
+                  <mat-label>Gender</mat-label>
+                  <mat-select id="gender" [(ngModel)]="user.gender" name="gender" class="form-control" required>
+                    <mat-option value="male">Male</mat-option>
+                    <mat-option value="female">Female</mat-option>
+                    <mat-option value="other">Other</mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+         
+              <div class="form-group">
+                <mat-form-field  class="allinputs input-control"  appearance="outline">
+                  <mat-label>Contact Number</mat-label>
+                  <input matInput [(ngModel)]="user.contactNumber" name="contactNumber" required>
+                </mat-form-field>
+              </div>
+          
+            </mat-card-content>
+            <mat-card-actions  fxLayoutAlign="center">
+              <!-- your form content here -->
+              <!-- <button type="submit" class="btn btn-primary  submitbtn">Submit</button> -->
+              <button mat-raised-button  color="primary" type ="submit" > Submit</button>
+            </mat-card-actions>
+          </form>
+          
+        </div>
+      </mat-card>
+      </div>
+      </mat-drawer-container>
